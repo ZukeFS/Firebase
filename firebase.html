@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Project</title>
+
+    <!--add favicon icon into firebase project with help of html link tag-->
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v7b5dc2faf76d7d8f9465a598b12205e0a07ab55718aa34068b626b788b42e0b5/firebase/images/favicon.png" type="image/x-icon">
+
+    <!--calling google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+
+    <!--calling fontawesome icons-->
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    
+    <!--adding bootstrap and custom css inside head block-->
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./firebase.css">
+   
+</head>
+
+<body>
+    <!--header section starts here-->
+    <section id="headerBlock">
+        <article>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/firebase logo.png" alt="firebase logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Use Cases</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Support</a>
+                    </li>
+                  </ul>
+
+                  <!--right side menu-->
+                  <ul class="navbar-nav ml-auto">
+                      <li class="list-item position-relative">
+                          <span class="position-absolute">
+                              <i class="fas fa-search"></i>
+                          </span>
+                          <input type="text" placeholder="Search" class="form-control my-2 bg-light">
+                      </li>
+
+                      <!--dropdown bootstrap starts here-->
+                      <li class="list-item">
+                        <div class="dropdown">
+                          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Bengali</a>
+                            <a class="dropdown-item" href="#">Assamese</a>
+                          </div>
+                        </div>
+                      </li>
+                      <!--dropdown bootstrap ends here-->
+
+                      <li class="list-item">
+                        <a href="" class="nav-link rightmenuwithblue text-primary">Go to console</a>
+                      </li>
+                      <li class="list-item">
+                        <a href="" class="nav-link rightmenuwithblue text-primary">Sign in</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </article>
+    </section>
+    <!--header section ends here-->
+
+    <!--slider section starts here-->
+    <section id="sliderBlock" class="jumbotron">
+      <article class="container">
+        <main class="row">
+          <div class="col-md-6">
+            <header class="text">
+              <h1>
+                Firebase helps <br> mobile and web <br> app teams succeed
+              </h1>
+            </header>
+            
+            <footer>
+              <button class="btn btn-custom-hero">Get started</button>
+              <button class="btn btn-custom-video">
+                <i class="fas fa-play-circle"> </i>
+                Watch the video</button>
+            </footer>
+          </div>
+          <div class="col-md-6">
+            <img class="hero_image" src="./images/hero-illo_2x.png" alt="loopup">
+          </div>
+        </main>
+      </article>
+    </section>
+    <!--slider section ends here-->
+
+    <!--Build apps starts here-->
+    <section id="buildAppsSection">
+      <article class="container">
+        <!--bootstrap grids-->
+         <div class="row">
+          <div class="col-md-4">
+            <h5>Build apps fast, without <br> managing infrastructure</h5>
+            <p>Firebase gives you functionality like analytics, <br> databases, messaging and crash reporting so <br> you can move quickly and focus on your users.</p>
+          </div>
+          
+          <div class="col-md-4">
+            <h5>Backed by Google, trusted by <br> top apps</h5>
+            <p>Firebase is built on Google infrastructure and <br> scales automatically, for even the largest apps.</p>
+          </div>          
+          
+          <div class="col-md-4">
+            <h5>One platform, with products <br> that work better together</h5>
+            <p>Firebase products work great individually but <br> share data and insights, so they work even <br> better together.</p>
+          </div>
+        </div>
+
+        <div class="card card-footer footerBlock1">
+          <footer>
+            <span>
+              <strong class="sup">Firebase supports:</strong>
+              &nbsp;<span class="iconsBlock">
+                <i class="fab fa-apple"></i>
+              </span>
+              
+              &nbsp;<span class="iconsBlock">
+                <i class="fab fa-android"></i>
+              </span>
+
+              &nbsp;<span class="iconsBlock">
+                <i class="fab fa-aws"></i>
+              </span>
+
+              &nbsp;<span class="iconsBlock">
+                <i class="fab fa-unity"></i>
+              </span>
+
+              &nbsp;<span class="iconsBlock">
+                <i class="fab fa-cuttlefish"></i>
+              </span>
+            </span>
+          </footer>
+        </div>
+      </article>
+    </section>
+    <!--Build apps ends here-->
+
+    <!--Platform section starts here-->
+    <section id="platformBlock">
+      <article class="container">
+        <header>
+          <h1 class="text-center font-weight-bold">A comprehensive app <br>
+            development platform
+          </h1>
+        </header>
+        
+        <main class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/build_1x.png" alt="build" class="image-card-top">
+              
+              <div class="card-body">
+                <h5 class="card-title">Build better apps</h5>
+              </div>
+              
+              <!--Column 1 starts here-->
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Cloud Firestore</h5>
+                        <div>
+                          <p>Store and sync app data at global scale</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>ML Kit <sup class="text-primary">BETA</sup> </h5>
+                        <div>
+                          <p>Machine learning for mobile <br> developers</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Cloud Functions</h5>
+                        <div>
+                          <p>Run mobile backend code without managing servers</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Authentication</h5>
+                        <div>
+                          <p>Authenticate users simply and <br> securely</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Hosting</h5>
+                        <div>
+                          <p>Deliver web app assets with speed and security</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Cloud Storage</h5>
+                        <div>
+                          <p>Store and serve files at Google <br> scale</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-1">
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Realtime Database</h5>
+                        <div>
+                          <p>Store and sync app data in <br> milliseconds</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="card-footer bg-white offset-4" style="margin-top: 10px;">
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <!--Column 1 ends here-->
+          
+          <!--Column 2 starts here-->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/quality_1x.png" alt="quality" class="image-card-top">
+              
+              <div class="card-body">
+                <h5 class="card-title">Improve app quality</h5>
+              </div>
+              
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-2">
+                        <i class="fas fa-code-branch"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Crashlytics</h5>
+                        <div>
+                          <p>Prioritize and fix issues with powerful, realtime crash reporting</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-2">
+                        <i class="fas fa-code-branch"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Performance Monitoring</h5>
+                        <div>
+                          <p>Gain insight into your app's performance</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-2">
+                        <i class="fas fa-code-branch"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Test Lab</h5>
+                        <div>
+                          <p>Test your app on devices hosted by Google</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-2">
+                        <i class="fas fa-code-branch"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>App Distribution <sup class="text-primary"> BETA</sup></h5>
+                        <div>
+                          <p>Distribute pre-release versions of your app to your trusted testers</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="card-footer bg-white offset-4" style="margin-top: 320px;">
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <!--Column 2 ends here-->
+
+          <!--Column 3 starts here-->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/grow_1x.png" alt="grow" class="image-card-top">
+              
+              <div class="card-body">
+                <h5 class="card-title">Grow your business</h5>
+              </div>
+              
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>In-App Messaging <sup class="text-primary"> BETA</sup></h5>
+                        <div>
+                          <p>Engage active app users with contextual messages</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Google Analytics</h5>
+                        <div>
+                          <p>Get free and unlimited app analytics</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Predictions</h5>
+                        <div>
+                          <p>Smart user segmentation based on predicted behavior</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>A/B Testing <sup class="text-primary"> BETA</sup></h5>
+                        <div>
+                          <p>Optimize your app experience through experimentation</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Cloud Messaging</h5>
+                        <div>
+                          <p>Send targeted messages and notifications</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Remote Config</h5>
+                        <div>
+                          <p>Modify your app without deploying a new version</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                    <aside>
+                      <div class="icons-3">
+                        <i class="fab fa-connectdevelop"></i>
+                      </div>
+                    </aside>
+
+                    <main>
+                      <div>
+                        <h5>Dynamic Links</h5>
+                        <div>
+                          <p>Drive growth by using deep links with attribution</p>
+                        </div>
+                      </div>
+                    </main>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="card-footer bg-white offset-4" style="margin-top: 12px;">
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+            <!--Column 3 ends here-->
+          </div>  
+          </div>
+        </main> <br> <br>
+
+        <!--Firebase Extension Block starts here-->
+        <hr class="my-4">
+        <section id="ExtensionBlock">
+          <article>
+            <header class="col-md-8 mx-auto">
+              <h2 class="h2 font-weight-bolder text-center">Firebase Extensions<sup class="text-primary">BETA</sup></h2>
+              <p class="text-center">Deploy functionality to your app quickly using pre-packaged solutions. Firebase Extensions are configurable, and work with Firebase and other Google Cloud Platform products.</p>
+            </header>
+            
+            <main class="col-md-8 mx-auto text-center">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="./images/resize_72@2x.png" alt="resize">
+                  <h5>Resize Images</h5>
+                </div>
+
+                <div class="col-md-3">
+                  <img src="./images/translate_72@2x.png" alt="translate">
+                  <h5>Translate Text</h5>
+                </div>
+
+                <div class="col-md-3">
+                  <img src="./images/add_72@2x.png" alt="sync">
+                  <h5>Sync with Mainchimp</h5>
+                </div>
+
+                <div class="col-md-3">
+                  <img src="./images/trigger_72@2x.png" alt="trigger">
+                  <h5>Trigger Email</h5>
+                </div>
+              </div>
+            </main>
+            
+            <footer>
+              <div class="col-md-4 offset-4 text-center button">
+                  <a href="#" class="btn btn-primary btn-block p-2">View all extensions</a>
+              </div>
+            </footer>
+          </article>
+        </section><br> <br> <br>
+
+        <!--Firebase Extension Block ends here-->
+
+        <!--Integration Block starts here-->
+        <hr class="my-4 py-2">
+        <section id="IntegrationBlock">
+          <article>
+            <header class="col-md-8 mx-auto">
+              <h2 class="h2 font-weight-bolder text-center">Integration</h2>
+            </header>
+            
+            <main class="col-md-10 mx-auto text-center">
+              <div class="iconsBlock">
+                <div style="margin: 0 15px;">
+                  <img src="./images/google-ads.svg" alt="googleads">
+                  <h5>Google Ads</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/admob.svg" alt="admob">
+                  <h5>AdMob</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/google-marketing-platform.svg" alt="gmp">
+                  <h5>Google Marketing Platform</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/playstore.svg" alt="playstore">
+                  <h5>Play Store</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/datastudio.svg" alt="ds">
+                  <h5>Data Studio</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/bigquery.svg" alt="bigquery">
+                  <h5>BigQuery</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/slack.svg" alt="slack">
+                  <h5>Slack</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/jira.svg" alt="jira">
+                  <h5>Jira</h5>
+                </div>
+
+                <div style="margin: 0 15px;">
+                  <img src="./images/pagerduty.png" alt="pagerduty">
+                  <h5>Pager Duty</h5>
+                </div>
+              </div>
+            </main>
+            
+            <footer>
+              <div class="col-md-4 offset-4 text-center button">
+                  <a href="#" class="btn btn-primary btn-block p-2">Learn more</a>
+              </div>
+            </footer>
+          </article>
+        </section><br> <br>
+        <!--Integration Block ends here--> 
+        
+        <footer class="card card-footer footerBlock2">
+          <div class="row">
+            <div class="col-md-7" style="margin: 27px 0; padding-left: 45px;">
+              <h4>Google Cloud Platform + Firebase</h4>
+              <h5>Firebase projects are backed by Google Cloud Platform, letting you scale your app to billions of users.</h5>
+              <a href="" class="link">Read more</a>
+            </div>
+            <div class="col-md-5 picture">
+              <img src="./images/cloud-plus-firebase_1x.png" alt="plus">
+            </div>            
+          </div>
+        </footer>
+      </article>
+    </section>
+    <!--Platform section ends here-->
+    
+
+    <!--Build apps ends here-->
+
+    <script src="./jquery-3.4.1.js"></script> <!--adding jquery lib for bootstrap lib-->
+    <script src="./popper.min.js"></script>  <!--adding popperjs for dropdown menu-->
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.js"></script>  <!--adding bootstrap js library-->
+</body>
+
+</html>
